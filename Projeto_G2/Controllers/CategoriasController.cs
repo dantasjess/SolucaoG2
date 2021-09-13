@@ -67,7 +67,7 @@ namespace Projeto_G2.Controllers
         // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Categoria(Categoria categoria)
+        public ActionResult Create(Categoria categoria)
         {
             return GravarCategoria(categoria);
         }
