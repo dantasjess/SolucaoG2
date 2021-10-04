@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Modelo.Cadastros;
-//using Projeto_G2.Context;
 using Serviço.Cadastros;
 
 namespace Projeto_G2.Areas.Cadastros.Controllers
@@ -16,7 +16,7 @@ namespace Projeto_G2.Areas.Cadastros.Controllers
             //private EFContext context = new EFContext();
 
             private FabricanteServico fabricanteServico = new FabricanteServico();
-            private ActionResult ObterVisaoFabricantePorId(long? id)
+        private ActionResult ObterVisaoFabricantePorId(long? id)
             {
                 if (id == null)
                 {
@@ -119,5 +119,5 @@ namespace Projeto_G2.Areas.Cadastros.Controllers
                     return View();
                 }
             }
-        }
+    }
 }
